@@ -1,10 +1,10 @@
 {
   "name": "celebrate-page",
-  "entry": "./server.js",
-  "installCommand": "npm install",
+  "entry": "./index.html",
+  "installCommand": "",
   "buildCommand": "",
   "assets": {
-    "directory": "./public",
+    "directory": "./",
     "notFoundStrategy": "singlePageApplication"
   }
 }
