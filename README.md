@@ -20,4 +20,67 @@ Demo：https://celebrate.7tianjiao.cn/
 git clone https://github.com/7tianjiao/celebrate.git
 ```
 
-2. 修改BGM：替换public/bgm.mp3
+2. 安装依赖
+```bash
+cd celebrate
+npm install
+```
+
+3. 修改BGM：替换public/bgm.mp3
+
+4. 本地运行
+```bash
+npm start
+```
+访问 http://localhost:3000 即可查看效果
+
+5. 自定义名字祝福
+访问 http://localhost:3000/greet/你的名字 即可生成专属祝福页面
+
+
+# 3.项目命令
+```bash
+# 安装依赖
+npm install
+
+# 开发模式运行
+npm run dev
+
+# 启动生产服务器
+npm start
+
+
+```
+
+
+# 4.部署到阿里云 ESA Page
+1. Fork 本项目到你的 GitHub 账号
+
+2. 在阿里云 ESA Page 创建新应用，导入你的 GitHub 仓库
+
+3. 配置构建信息：
+   - 构建命令：`npm run build`（或留空）
+   - 输出目录：`./public`
+
+4. 部署完成后，即可访问你的专属祝福页面
+
+
+# 5.项目结构
+```
+.
+├── public/              # 静态资源目录
+│   ├── index.html      # 主页面
+│   ├── script.js       # 粒子特效脚本
+│   └── bgm.mp3         # 背景音乐
+├── images/             # 图片资源
+├── server.js           # Express 服务器
+├── package.json        # 项目配置
+└── README.md           # 项目说明
+```
+
+
+# 6.技术栈
+- 前端：HTML5 + Canvas + JavaScript
+- 后端：Node.js + Express
+- 部署：阿里云 ESA Page
+- 特效：粒子动画系统
