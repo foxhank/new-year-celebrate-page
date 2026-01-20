@@ -672,7 +672,9 @@ function generateLink() {
     }
 
     const encoded = encodeName(name);
-    const link = `${window.location.origin}/?name=${encoded}`;
+    // 生成当前页面的URL，去掉已有的查询参数
+    const baseUrl = window.location.href.split('?')[0];
+    const link = `${baseUrl}?name=${encoded}`;
 
     document.getElementById('linkInput').value = link;
     document.getElementById('resultContainer').style.display = 'block';

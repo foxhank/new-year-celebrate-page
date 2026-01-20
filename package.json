@@ -2,22 +2,11 @@
   "name": "greeting-particle-effect",
   "version": "1.0.0",
   "description": "炫酷的新年祝福粒子特效网页",
-  "main": "server.js",
+  "main": "index.html",
   "scripts": {
-    "install": "npm install",
-    "build": "echo '静态网站，无需构建步骤'",
-    "dev": "node server.js",
-    "start": "node server.js",
-    "serve": "node server.js"
+    "build": "echo '静态网站，无需构建步骤'"
   },
   "keywords": ["particle", "greeting", "animation"],
   "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "assets": {
-    "directory": "./public",
-    "notFoundStrategy": "singlePageApplication"
-  }
+  "license": "MIT"
 }
